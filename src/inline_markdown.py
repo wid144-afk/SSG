@@ -92,3 +92,12 @@ def text_to_textnodes(text):
     nodes = split_nodes_image(nodes)
     nodes = split_nodes_link(nodes)
     return nodes
+
+def markdown_to_blocks(markdown):
+    lines = markdown.split("\n\n")
+    blocks = []
+    for line in lines:
+        if line.strip() == "":
+            continue
+        blocks.append(line.strip())
+    return blocks
