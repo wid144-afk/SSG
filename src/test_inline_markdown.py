@@ -1,6 +1,8 @@
 import unittest
 
 from inline_markdown import (
+    BlockType,
+    block_to_block_type,
     extract_markdown_images,
     extract_markdown_links,
     markdown_to_blocks,
@@ -141,3 +143,4 @@ just this one line
             blocks,
             ["just this one line"],
         )
+    

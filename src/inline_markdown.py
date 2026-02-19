@@ -1,3 +1,4 @@
+from enum import Enum
 from textnode import TextType, TextNode
 import re
 
